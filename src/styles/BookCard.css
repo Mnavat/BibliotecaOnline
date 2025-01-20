@@ -1,0 +1,65 @@
+.bookcard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    transition: transform 0.3s ease;
+    height:auto;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .bookcard:hover {
+    transform: translateY(-10px); /* Efecto hover */
+    transform: scale(1.02);
+  }
+  
+  .bookcard__image {
+    width: 100%;
+    max-height: auto;
+    border-radius: 4px;
+    object-fit: cover ;
+  }
+  
+  .bookcard__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .bookcard__author {
+    font-size: 16px;
+    color: #555;
+    height: fit-content;
+    line-height: 1;
+  }
+  
+  .bookcard__description {
+    font-size: 14px;
+    color: #777;
+    text-decoration: none;
+    line-height: 1;
+  }
+  
+  .bookcard__button {
+    background-color: whitesmoke;
+    font-size: 18px;
+    color: var(--color-primary);
+    padding-inline: 10px;
+    padding-block: 5px;
+    border: solid 1px var(--color-primary);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-decoration: none;
+    line-height: 1;
+  }
+  
+  .bookcard__button:hover {
+    background-color: var(--color-primary); /* Color al pasar el cursor */
+    color: white;
+  }

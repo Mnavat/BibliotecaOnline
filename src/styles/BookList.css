@@ -1,0 +1,22 @@
+.booklist {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 columnas de igual tamaño */
+    gap: 30px; /* Espacio entre los elementos */
+    padding: 20px;
+    grid-template-rows: auto;
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 1200px) {
+    .booklist {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .booklist {
+      grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
+  }

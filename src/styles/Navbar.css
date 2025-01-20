@@ -1,0 +1,88 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Color oscuro para la barra */
+    padding: 10px 20px;
+    color: white;
+  }
+
+  .navbar__logo{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navbar__logo h1 {
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+
+  .navbar__logo img {
+    height: 30px;
+    width: auto;
+    margin-right: 5px;
+  }
+  
+  .navbar__links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar__item {
+    margin-left: 20px; /* Espaciado entre los enlaces */
+  }
+  
+  .navbar__link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar__link:hover {
+    color: #97dcff; /* Color al pasar el cursor (tomato) */
+  }
+  
+  .navbar__link:active {
+    color: #fff; /* Color cuando se hace clic */
+  }
+    
+  /* Oculta el botón de menú en pantallas grandes */
+  .navbar__toggle {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar__links {
+      display: none; /* Oculta los enlaces por defecto */
+      flex-direction: column;
+      background-color: #444;
+      position: absolute;
+      top: 50px; /* Ajusta según la altura de tu navbar */
+      right: 0;
+      width: 150px;
+    }
+  
+    .navbar__links.active {
+      display: flex; /* Muestra los enlaces al hacer clic en el menú */
+    }
+  
+    .navbar__item {
+      margin: 1rem 0;
+      text-align: center;
+    }
+  
+    .navbar__toggle {
+      display: block;
+      cursor: pointer;
+      background-color: #333333;
+      color:white;
+      border-style: none;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }

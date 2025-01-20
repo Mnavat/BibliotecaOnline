@@ -1,0 +1,114 @@
+.home {
+    padding: 20px;
+    background-color: #efeeec;
+    font-family:DM sans;
+  }
+
+  .home__welcome {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    background-image: radial-gradient(circle, #00000000 35%, rgba(0, 0, 0, 0.0) 90%), url('../assets/images/Home5.jpg') ;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .home__welcome-content {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .home__welcome-title {
+    font-size: 6rem;
+    font-weight:normal;
+    margin: 0;
+    vertical-align: sub;
+    font-family:DM sans;
+    color: #f9f9f9;
+    letter-spacing: 5px;
+  }
+
+  .home__first{
+    font-family: DM sans;
+    background-color:#efeeec;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color:var(--color-primary);
+    padding: 50px;
+  }
+  
+  .home__releases{
+    color:var(--color-primary);
+    height: fit-content;
+  }
+
+
+  .carousel img {
+    max-height: 400px;
+    object-fit: cover;
+    filter: brightness(80%);
+  }
+  
+  .carousel-caption h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #efeeec;
+    text-shadow: 0px 0px 30px rgb(0, 0, 0);
+  }
+  
+  .carousel-caption p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #efeeec;
+    text-shadow: 0px 0px 30px rgb(0, 0, 0);
+  }
+
+  .home__Last {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: space-between; /* Deja espacio entre imagen y texto */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 5%; /* Margen interno para separación */
+    flex-wrap: wrap; /* Acomoda los elementos en varias líneas si no caben */
+    background-color: #3a84a85e;
+  }
+  
+  /* Contenedor de la imagen */
+  .imagen-container {
+    flex: 1; /* Ocupa el espacio disponible proporcionalmente */
+    max-width: 50%; /* Limita el tamaño máximo de la imagen */
+  }
+  
+  .imagen {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene las proporciones */
+    display: block; /* Elimina espacios en blanco alrededor */
+  }
+  
+  /* Contenedor del texto */
+  .texto-container {
+    flex: 1; /* Ocupa el espacio disponible proporcionalmente */
+    max-width: 50%; /* Limita el tamaño máximo del texto */
+    padding-left: 20px; /* Espacio adicional entre imagen y texto */
+    font-family:DM sans;
+  }
+  
+  .titulo {
+    font-size: 2rem; /* Tamaño del título */
+    margin-bottom: 10px; /* Separación con el párrafo */
+  }
+  
+  .parrafo {
+    font-size: 1rem; /* Tamaño del texto */
+    line-height: 1.5; /* Altura de línea para mejor legibilidad */
+    color: #555; /* Color gris oscuro para el texto */
+  }

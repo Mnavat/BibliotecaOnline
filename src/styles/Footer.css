@@ -1,0 +1,79 @@
+.footer {
+    background-color: #333; /* Fondo oscuro para el footer */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .footer__contact,
+  .footer__socials,
+  .footer__info {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer__address,
+  .footer__phone,
+  .footer__email {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .footer__social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer__social-item {
+    font-size: 24px;
+  }
+  
+  .footer__social-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer__social-link:hover {
+    color: #ff6347; /* Color de hover en los iconos */
+  }
+  
+  .footer__info {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .footer__text {
+    margin: 0;
+  }
+  
+  /* Diseño Responsivo */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer__contact,
+    .footer__socials,
+    .footer__info {
+      text-align: center;
+    }
+  
+    .footer__social-links {
+      justify-content: center;
+    }
+  }
