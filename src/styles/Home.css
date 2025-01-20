@@ -100,6 +100,7 @@
     max-width: 50%; /* Limita el tamaño máximo del texto */
     padding-left: 20px; /* Espacio adicional entre imagen y texto */
     font-family:DM sans;
+    text-align: justify;
   }
   
   .titulo {
@@ -116,5 +117,16 @@
   @media (max-width: 768px) {
     .home__welcome-title {
       font-size: 4rem;
+    }
+    .home__Last {
+    flex-direction: column;
+    }
+
+    .imagen-container {
+      max-width: 90%;
+    }
+    .texto-container {
+      max-width: 90%; /* Limita el tamaño máximo del texto */
+      padding-left: 0px;
     }
   }
