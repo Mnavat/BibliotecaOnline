@@ -38,7 +38,7 @@
     display: flex;
     justify-content: center;
     align-items:center;
-    height: 300px;
+    height: fit-content;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -111,4 +111,10 @@
     font-size: 1rem; /* Tamaño del texto */
     line-height: 1.5; /* Altura de línea para mejor legibilidad */
     color: #555; /* Color gris oscuro para el texto */
+  }
+
+  @media (max-width: 768px) {
+    .home__welcome-title {
+      font-size: 4rem;
+    }
   }
